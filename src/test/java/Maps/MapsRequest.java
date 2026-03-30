@@ -71,9 +71,6 @@ public class MapsRequest {
 
                  System.out.println(deleteResponse);
 
-                 // Request builder
-
-
 
     }
 }
