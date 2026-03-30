@@ -2,12 +2,7 @@ package Maps;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import io.restassured.specification.RequestSpecification;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-
-import java.lang.foreign.MemorySegment;
 
 import static PayLoads.MapsPayloads.addPlaceRequestBody;
 import static PayLoads.MapsPayloads.updatePlaceRequestBody;
@@ -16,7 +11,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.testng.Assert.assertEquals;
 
-public class MapsRequet {
+public class MapsRequest {
 
     String newAddress = "70 summer walk, USA";
     @Test
@@ -75,6 +70,10 @@ public class MapsRequet {
                 .extract().response().asString();
 
                  System.out.println(deleteResponse);
+
+                 // Request builder
+
+
 
     }
 }
